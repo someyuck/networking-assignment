@@ -1,0 +1,2 @@
+# Assumptions
+1. For partA/basic, after one run of the TCP client-server pair programs, wait for some time, as immediately after a run, the address may still be in use (bind() throws an error). Waiting for some time would free it up and then we can run both programs again.
