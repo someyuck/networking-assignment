@@ -1,4 +1,9 @@
-# Instructions to test
+# Networking Assignment
+
+This is the collection of my solutions to the networking assigment questions for my Operating Systems and Networks class in the Monsoon 2023 semester.
+
+
+# How to test
 
 ## For Part A
 ### For basic
@@ -14,7 +19,7 @@
 ## For Part B
 1. Open a terminal in the `partB` directory and run `make`. Then open another terminal, and run `./server` in one and `./client` in the other to begin.
 2. To remove the executables, run `make clean`.
-3. For partB, to test the retransmission of packets in case of the sender not receivng acknowledgements of some packets from the receiver, uncomment part of functions.c (lines 216 to 217), and part of server.c (line 66). Keep them commented to enable full acknowledgement of received packets.
+3. For partB, to test the retransmission of packets in case of the sender not receivng acknowledgements of some packets from the receiver, uncomment part of `functions.c` (lines 216 to 217), and part of `server.c` (line 66). Keep them commented to enable full acknowledgement of received packets.
 
 # Networking Report (Specification 4)
 
@@ -47,5 +52,5 @@ To implement this in UDP:
 
 
 # Assumptions
-1. For partA/basic, after one run of the TCP client-server pair programs, wait for some time, as immediately after a run, the address may still be in use (bind() throws an error). Waiting for some time would free it up and then we can run both programs again.
+1. For partA/basic, after one run of the TCP client-server pair programs, wait for some time, as immediately after a run, the address may still be in use (`bind()` throws an error). Waiting for some time would free it up and then we can run both programs again.
 2. For partA/rps, run the UDP programs with the server run first, then the clients, as I make the server wait for a confirmation from the clients that they are ready to play. For the TCP programs, run in any order.
