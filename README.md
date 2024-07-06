@@ -6,9 +6,9 @@
 2. For the UDP server-client programs, open a terminal in the `partA/basic` directory and run `make udp` (or `make`). Then run `./udpserver` in one terminal and `udpclient` in another terminal to begin.
 3. To remove the executables, run `make clean`. Ignore errors that may come up due to some executables not being present (as their source files were not compiled)
 
-### For rpc 
-1. For the TCP version, open a terminal in the `partA/rpc` directory and run `make tcp` (or `make`). Then open two more terminals and run '`./tcpserver`, `./tcpclient1` and `./tcpclient2` to begin.
-2. For the UDP version, open a terminal in the `partA/rpc` directory and run `make udp` (or `make`). Then open two more terminals and run '`./udpserver`, `./udpclient1` and `./udpclient2` to begin.
+### For rps 
+1. For the TCP version, open a terminal in the `partA/rps` directory and run `make tcp` (or `make`). Then open two more terminals and run '`./tcpserver`, `./tcpclient1` and `./tcpclient2` to begin.
+2. For the UDP version, open a terminal in the `partA/rps` directory and run `make udp` (or `make`). Then open two more terminals and run '`./udpserver`, `./udpclient1` and `./udpclient2` to begin.
 3. To remove the executables, run `make clean`. Ignore errors that may come up due to some executables not being present (as their source files were not compiled)
 
 ## For Part B
@@ -48,4 +48,4 @@ To implement this in UDP:
 
 # Assumptions
 1. For partA/basic, after one run of the TCP client-server pair programs, wait for some time, as immediately after a run, the address may still be in use (bind() throws an error). Waiting for some time would free it up and then we can run both programs again.
-2. For partA/rpc, run the UDP programs with the server run first, then the clients, as I make the server wait for a confirmation from the clients that they are ready to play. For the TCP programs, run in any order.
+2. For partA/rps, run the UDP programs with the server run first, then the clients, as I make the server wait for a confirmation from the clients that they are ready to play. For the TCP programs, run in any order.
